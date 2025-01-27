@@ -1,6 +1,7 @@
 baseURL: "https://betterbyte.fun/"
 title: "字节的乐趣"
-paginate: 5
+pagination:
+  pagerSize: 10
 theme: PaperMod
 
 enableRobotsTXT: true
