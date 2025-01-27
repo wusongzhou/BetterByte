@@ -22,3 +22,22 @@ jobs:
 
       - name: Build
         run: hugo --minify
+
+      - name: Setup Python                #配置 python 环境，cosmod 基于 python 开发
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Setup coscmd               # 安装 coscmd 工具
+        run: sudo pip install coscmd
+
+      - name: Configure coscmd           # 配置存储桶参数和鉴权
+        env:
+          SECRET_ID: ${{ secrets.SecretId }}      # SecretId
+          SECRET_KEY: ${{ secrets.SecretKey }}    # SecretKey
+          BUCKET: ${{ secrets.Bucket }}           # 存储桶名称，在存储桶基本信息中获取
+          REGION: ${{ secrets.Region }}           # 存储桶地域，在存储桶基本信息中获取，如 ap-shanghai
+        run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION # 为 coscmd 工具配置存储桶信息
+
+      - name: Upload to COS
+        run: coscmd upload -rfs --delete public/ /     #上传 public 中的文件 至 cos 存储桶根目录
