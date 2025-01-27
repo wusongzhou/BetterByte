@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>First on 字节的乐趣</title>
-    <link>https://betterbyte.fun/tags/first/</link>
+    <link>http://localhost:2013/tags/first/</link>
     <description>Recent content in First on 字节的乐趣</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
-    <atom:link href="https://betterbyte.fun/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:2013/tags/first/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My 1st post</title>
-      <link>https://betterbyte.fun/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/</link>
+      <link>http://localhost:2013/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>https://betterbyte.fun/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://localhost:2013/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>My 2st post</title>
+      <link>http://localhost:2013/posts/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>http://localhost:2013/posts/%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
   </channel>
