@@ -29,7 +29,7 @@ jobs:
           python-version: 3.9
 
       - name: Setup coscmd               # 安装 coscmd 工具
-        run: sudo pip install coscmd
+        run: pip install --user coscmd
 
       - name: Configure coscmd           # 配置存储桶参数和鉴权
         env:
