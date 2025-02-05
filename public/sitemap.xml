@@ -2,24 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:6227/tags/first/</loc>
+    <loc>https://betterbyte.fun/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:6227/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://betterbyte.fun/posts/test/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:6227/posts/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://betterbyte.fun/posts/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:6227/posts/</loc>
+    <loc>https://betterbyte.fun/tags/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:6227/tags/</loc>
+    <loc>https://betterbyte.fun/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:6227/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:6227/categories/</loc>
+    <loc>https://betterbyte.fun/categories/</loc>
   </url>
 </urlset>
