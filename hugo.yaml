@@ -14,17 +14,17 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: "字节的乐趣"
   description: "Hello,I am Chou.This is my blog, where I record some of my own insights and experiences."
   keywords: [ Blog, Portfolio, PaperMod ]
   author: Me
-  # author: ["Me", "You"] # multiple authors
   images: [ "<link or path of image for opengraph, twitter-cards>" ]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: auto
   disableThemeToggle: false
 
+  # 显示控制
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -41,23 +41,32 @@ params:
   showtoc: false
   tocopen: false
 
+  # 底部备案配置
+  hidePowerBy: true  # 隐藏默认 Powered by 信息
+  footer_custom: |
+    <div class="footer-custom">
+      &copy; {{ now.Format "2006" }} 字节的乐趣 
+      | 
+      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">{{ "滇ICP备2025051241号" }}</a>
+    </div>
+
+  # 资源文件配置
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
+  # 导航标签
   label:
     text: "字节的乐趣"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
+  # 个人信息模块
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: false
     title: ExampleSite
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
@@ -70,11 +79,12 @@ params:
       - name: Tags
         url: tags
 
-  # home-info mode
+  # 主页信息
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
+  # 社交图标
   socialIcons:
     - name: x
       url: "https://x.com/"
@@ -83,6 +93,7 @@ params:
     - name: github
       url: "https://github.com/"
 
+  # 分析验证
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
@@ -91,18 +102,19 @@ params:
     yandex:
       SiteVerificationTag: "XYZabc"
 
+  # 封面控制
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
 
+  # 编辑链接
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    Text: "Suggest Changes"
+    appendFilePath: true
 
-  # for search
-  # https://fusejs.io/api/options.html
+  # 搜索配置
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -110,8 +122,10 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    limit: 10
     keys: [ "title", "permalink", "summary", "content" ]
+
+# 菜单配置
 menu:
   main:
     - identifier: categories
@@ -126,13 +140,9 @@ menu:
       name: example.org
       url: https://example.org
       weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
+# 语法高亮
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai

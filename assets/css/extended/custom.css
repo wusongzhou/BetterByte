@@ -1,0 +1,30 @@
+/* 自定义底部样式 */
+.footer-custom {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+.footer-custom a {
+    color: #2d96bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #1d6a8f;
+}
+
+/* 移动端换行优化 */
+@media (max-width: 768px) {
+    .footer-custom {
+        padding: 1rem 0;
+        line-height: 1.6;
+    }
+    .footer-custom > span:not(:last-child)::after {
+        content: "|";
+        margin: 0 0.5rem;
+    }
+}
