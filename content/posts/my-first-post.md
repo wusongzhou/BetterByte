@@ -1,6 +1,6 @@
 ---
 date: '2025-02-13T03:49:37+08:00'
-draft: true
+draft: false
 title: 'My First Post'
 tags: ["first"]
 author: "Me"
