@@ -16,10 +16,10 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "字节的乐趣"
   description: "Hello,I am Chou.This is my blog, where I record some of my own insights and experiences."
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [ Blog, Portfolio, PaperMod ]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: [ "<link or path of image for opengraph, twitter-cards>" ]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -110,7 +110,9 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+    keys: [ "title", "permalink", "summary", "content" ]
+  codeCopy: true
+  codeCopyText: "📋 复制"
 menu:
   main:
     - identifier: categories
@@ -135,3 +137,4 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+# 在 config.yml 的 params 部分添加
