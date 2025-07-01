@@ -4,7 +4,6 @@ draft: false
 title: 'My First Post'
 tags: ["first"]
 author: "Me"
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 hidemeta: false
@@ -41,7 +40,7 @@ editPost:
 ## 二级标题：功能演示
 
 ### 代码块示例
-```python
+```
 def hello_world():
     print("Hello, 世界!")  # 代码复制按钮会自动出现在右上角
 ---
