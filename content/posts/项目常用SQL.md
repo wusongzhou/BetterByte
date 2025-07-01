@@ -37,7 +37,7 @@ editPost:
 
 # 项目常用SQL
 
-## 每日销售
+## 每日销售查询
 
 ```每日销售
 select t1.SaleDate,
