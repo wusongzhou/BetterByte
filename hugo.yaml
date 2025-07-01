@@ -3,8 +3,8 @@
 # ========================
 baseURL: "https://www.betterbyte.fun/"  # 生产环境域名，必须与 CDN 域名一致
 title: "字节的乐趣"                # 网站标题（浏览器标签页显示）
-paginate: 5                        # 每页显示的文章数（分页功能）
 theme: PaperMod                     # 使用的主题名称（必须与 themes/ 目录名一致）
+pagerSize : 10
 
 # ========================
 # 构建控制
